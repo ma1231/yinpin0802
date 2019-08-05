@@ -1,8 +1,11 @@
 package com.example.yinpin;
 
 import android.os.Environment;
+import android.util.Log;
 
 import java.io.File;
+
+import static com.example.yinpin.MainActivity.ispause;
 
 public class mythread extends Thread{
 
@@ -11,7 +14,8 @@ public class mythread extends Thread{
     @Override
     public void run() {
         decoder=new audiodecoder();
-        decoder.excute(SAMPLE);
+        Log.d("许诺", "123");
+            decoder.excute(SAMPLE);
     }
 }
 
